@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="css/main.scss" type="text/css"/>
+<link href='https://fonts.googleapis.com/css?family=Titillium Web' rel='stylesheet'>
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -7,7 +9,87 @@
         <title>MP1</title>
     </head>
     <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
+        <header>
+            <div id="header">
+                <!-- TODO:: Home -->
+                <div class="transparent-rectangle">
+                    <div class="intro-content">
+                        <img src="assets/luke.jpg" id="luke">
+                        <p>Hey, I'm</p>
+                        <h1 class="bold">Luke Chieng</h1>
+                        <p>Welcome to my personal website.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#" class="nav__link"><img src="assets/mylogo.jpg" height="96"></a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#experience" class="nav__link">Exprerience</a></li>
+                <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main class="main">
+            <section class="section" id="about">
+                <!-- TODO:: About -->
+				
+            </section>
+            <section class="section yellow" id="experience">
+                <!-- TODO:: Experience -->
+				<div class="section-title">Experience</div>
+                <div class="centered line"></div>
+                <div class="experience-container">
+                    <img src="assets/visa.png" class="logo">
+                    <div class="content">
+                        <div class="title">Visa, Software Engineer Intern</div>
+                        <div class="date">May 2022 - August 2022</div>
+                        <p class="description">Used Xtext and Xtend to develop a formatting tool and syntax highlighting for a domain specific language
+                            which improved quality of life for developers. Developed a new command line interface utilizing a subcommand style structure to better organize the codebase.
+                            Prototyped an emergency response application looking to leverage company resources to rebuild communities after natural disasters.
+                        </p>
+                    </div>
+                </div>
+                <div class="experience-container">
+                    <img src="assets/disruption.jpg" class="logo">
+                    <div class="content">
+                        <div class="title">Disruption Lab at Gies, Software Engineer</div>
+                        <div class="date">August 2021 - August 2022</div>
+                        <p class="description">Helped develop a decentralized NFT marketplace web app using two crypto currencies (ERC-20, ERC-1155 tokens).
+                            Worked on creating a front end store using React and Javascript. Understanding and developing tests for smart contract functionality
+                            using Truffle and Solidity. Learned to make web3.js connections to a private, Ethereum based, Proof of Authority blockchain for use
+                            by the University of Illinois.
+                        </p>
+                    </div>
+                </div>
+                <div class="experience-container">
+                    <img src="assets/mastery.png" class="logo">
+                    <div class="content">
+                        <div class="title">Mastery Logistics Systems, Software Engineer Intern</div>
+                        <div class="date">February 2021 - August 2021</div>
+                        <p class="description">Helped develop and maintain an in-house deployment system that orchestrated releases to Kubernetes clusters. Worked
+                            on optimizations to separate configurations from our codebase using Golang and Helm. Wrote Github Actions to automate
+                            releases to specific environments. Also helped lay the foundation for a new notification system by implementing a factory
+                            pattern using Typescript and GraphQL queries.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="portfolio">
+                <!-- TODO:: Portfolio -->
+				Portfolio
+            </section>
+            <section class="section yellow" id="contact">
+                <!-- TODO:: Contact -->
+				Contact
+            </section>
+        </main>
+
+        <footer class="footer">
+            <!-- TODO:: Footer -->
+        </footer>
     </body>
 </html>
