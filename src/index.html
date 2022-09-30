@@ -28,24 +28,57 @@
                 <li><a href="#" class="nav__link"><img src="assets/mylogo.jpg" height="96"></a></li>
                 <li><a href="#about" class="nav__link">About</a></li>
                 <li><a href="#experience" class="nav__link">Exprerience</a></li>
-                <li><a href="#carousel" class="nav__link">Carousel</a></li>
-                <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                <li><a href="#skills" class="nav__link">Skills</a></li>
+                <li><a href="#projects" class="nav__link">Projects</a></li>
             </ul>
         </nav>
 
         <main class="main">
             <section class="section" id="about">
                 <!-- TODO:: About -->
-				
+                <div class="section-title white">About</div>
+                <div class="centered line"></div>
+                
+                <div class="about-container">
+                    <div class="row">
+                        <div class="column">
+                            <img src="assets/lukeprofessional.jpg">
+                        </div>
+                        <div class="column">
+                            <div class="about-title">Education</div>
+                            <div class="luke-info">
+                                <div class="info-piece">
+                                    School: <span>University of Illinois at Urbana-Champaign</span>
+                                </div>
+                                <div class="info-piece">
+                                    Major: <span>Computer Science and Statistics</span>
+                                </div>
+                                <div class="info-piece">
+                                    Graduation: <span>Spring 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="about-title">Interests</div>
+                            <div class="luke-info">
+                                <div class="interest-piece">Playing basketball</div>
+                                <div class="interest-piece">Running</div>
+                                <div class="interest-piece">Fantasy Football</div>
+                                <div class="interest-piece">Board Games</div>
+                                <div class="interest-piece">Hiking</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section class="section yellow" id="experience">
+            <section class="section" id="experience">
                 <!-- TODO:: Experience -->
 				<div class="section-title">Experience</div>
                 <div class="centered line"></div>
                 <div class="experience-container">
                     <img src="assets/visa.png" class="logo">
                     <div class="content">
-                        <div class="title">Visa, Software Engineer Intern</div>
+                        <div class="title">Visa, <span class="italics">Software Engineer Intern</span></div>
                         <div class="date">May 2022 - August 2022</div>
                         <p class="description">Used Xtext and Xtend to develop a formatting tool and syntax highlighting for a domain specific language
                             which improved quality of life for developers. Developed a new command line interface utilizing a subcommand style structure to better organize the codebase.
@@ -56,7 +89,7 @@
                 <div class="experience-container">
                     <img src="assets/disruption.jpg" class="logo">
                     <div class="content">
-                        <div class="title">Disruption Lab at Gies, Software Engineer</div>
+                        <div class="title">Disruption Lab at Gies, <span class="italics">Software Engineer</span></div>
                         <div class="date">August 2021 - August 2022</div>
                         <p class="description">Helped develop a decentralized NFT marketplace web app using two crypto currencies (ERC-20, ERC-1155 tokens).
                             Worked on creating a front end store using React and Javascript. Understanding and developing tests for smart contract functionality
@@ -68,7 +101,7 @@
                 <div class="experience-container">
                     <img src="assets/mastery.png" class="logo">
                     <div class="content">
-                        <div class="title">Mastery Logistics Systems, Software Engineer Intern</div>
+                        <div class="title">Mastery Logistics Systems, <span class="italics">Software Engineer Intern</span></div>
                         <div class="date">February 2021 - August 2021</div>
                         <p class="description">Helped develop and maintain an in-house deployment system that orchestrated releases to Kubernetes clusters. Worked
                             on optimizations to separate configurations from our codebase using Golang and Helm. Wrote Github Actions to automate
@@ -78,21 +111,21 @@
                     </div>
                 </div>
             </section>
-            <section class="section slider-wrapper" id="carousel">
+            <section class="section carousel-section" id="skills">
                 <!-- TODO:: Carousel -->
                 <div class="section-title white">Skills</div>
                 <div class="centered line"></div>
                      
-                <button class="slide-arrow" id="slide-arrow-prev">
+                <button class="carousel-arrow" id="carousel-arrow-left">
                     &#8249;
                 </button>
                 
-                <button class="slide-arrow" id="slide-arrow-next">
+                <button class="carousel-arrow" id="carousel-arrow-right">
                     &#8250;
                 </button>
                 
-                <ul class="slides-container" id="slides-container">
-                    <li class="slide">
+                <ul class="carousel-container" id="carousel-container">
+                    <li class="carousel-slide">
                         <div class="image-container">
                             <img src="assets/python.jpg">
                             <img src="assets/java.png">
@@ -100,23 +133,58 @@
                             <img src="assets/go.png">
                         </div>
                     </li>
-                    <li class="slide">
+                    <li class="carousel-slide">
+                        <div class="image-container">
+                            <img src="assets/sql.png">
+                            <img src="assets/graphql.png">
+                            <img src="assets/mongodb.png">
+                        </div>
+                    </li>
+                    <li class="carousel-slide">
                         <div class="image-container">
                             <img src="assets/microsoftoffice.png">
                             <img src="assets/gsuite.jpeg">
                         </div>
                     </li>
-                    <li class="slide">2</li>
                 </ul>
             </section>
-            <section class="section" id="portfolio">
-                <!-- TODO:: Portfolio -->
-				Portfolio
+            <section class="section" id="projects">
+                <div class="section-title">Projects</div>
+                <div class="centered line"></div>
+
+                <div class="projects-container">
+                    <div class="images">
+                        <img src="assets/iblock.png" alt="NFT Marketplace" />
+                        <img src="assets/taobasketball.jpg" alt="TAO Training Website" />
+                        <img src="assets/piano.jpg" alt="MyPianoPlayer" />
+                        <img src="assets/memegenerator.png" alt="Meme Generator Web App" />
+                        <img src="assets/groceries.jpg" alt="Grocery List App" />
+                    </div>
+                    <div class="modal">
+                        <span class="close">&times;</i></span>
+                        <div class="modalContent">
+                            <img class="modalImg" />
+                            <span class="modalTxt"></span>
+                        </div>
+                    </div>
+                </div>
+
             </section>
         </main>
 
         <footer class="footer">
-            <!-- TODO:: Footer -->
+            <div class="footer-content">
+                <h2>Designed by Luke Chieng</h2>
+                <p>Created for CS409</p>
+
+                <div>
+                    <a href="https://www.facebook.com/luke.chieng.3"><img src="assets/icons/facebook_icon.png"></a>
+                    <a href="https://www.instagram.com/lukechieng/"><img src="assets/icons/instagram_icon.png"></a>
+                    <a href="https://www.linkedin.com/in/luke-chieng/"><img src="assets/icons/linkedin_icon.png"></a>
+                    <a href="https://twitter.com/lukechieng15"><img src="assets/icons/twitter_icon.png"></a>
+                    <a href="https://www.youtube.com/channel/UC6VS4lJnbY0ms-g5PUx6rOA"><img src="assets/icons/youtube_icon.png"></a>
+                </div>
+            </div>
         </footer>
     </body>
 </html>

@@ -49,10 +49,10 @@ function fixedNav() {
 window.addEventListener('scroll', fixedNav);
 
 // Carousel
-const slidesContainer = document.getElementById("slides-container");
-const slide = document.querySelector(".slide");
-const prevButton = document.getElementById("slide-arrow-prev");
-const nextButton = document.getElementById("slide-arrow-next");
+const slidesContainer = document.getElementById("carousel-container");
+const slide = document.querySelector(".carousel-slide");
+const prevButton = document.getElementById("carousel-arrow-left");
+const nextButton = document.getElementById("carousel-arrow-right");
  
 nextButton.addEventListener("click", () => {
   const slideWidth = slide.clientWidth;
@@ -62,4 +62,23 @@ nextButton.addEventListener("click", () => {
 prevButton.addEventListener("click", () => {
   const slideWidth = slide.clientWidth;
   slidesContainer.scrollLeft -= slideWidth;
+});
+
+// Modal
+const images = document.querySelectorAll(".images img");
+const modal = document.querySelector(".modal");
+const modalImg = document.querySelector(".modalImg");
+const modalTxt = document.querySelector(".modalTxt");
+const close = document.querySelector(".close");
+
+images.forEach((image) => {
+  image.addEventListener("click", () => {
+    modalImg.src = image.src;
+    modalTxt.innerHTML = image.alt;
+    modal.classList.add("appear");
+
+    close.addEventListener("click", () => {
+      modal.classList.remove("appear");
+    });
+  });
 });
